@@ -1,4 +1,19 @@
 // ReactDOM
-const domRoot = document.getElementById('root');
+function App() {
+  const [textHide, setStateText] = React.useState(true);
+
+  function hanbleToggle() {
+    setStateText(!textHide);
+  }
+
+  return (
+    <>
+      <button onClick={hanbleToggle}>{textHide ? "Hide" : "Show"}</button>
+      {textHide && <h1>Text</h1>}
+      {/* return 1st false on last */}
+    </>
+  );
+}
+const domRoot = document.getElementById("root");
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+root.render(<App />);

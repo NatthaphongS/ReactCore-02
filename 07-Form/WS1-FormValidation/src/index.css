@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.app > h1{
+    font-size: 3rem;
+}
+.form_register{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 70vw;
+}
+
+.form_register input,.form_register button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.form_register p{
+    font-size: 0.8rem;
+    margin: 0;
+    color: #dc2626;
+}
+
+.form_register >button{
+    background-color: #dc2626;
+    color: white;
+    cursor: pointer;
+}
+.gologin{
+    margin: 0;
+    font-size: 0.8rem;
+    padding-top: 8px;
+}
+.gologin>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

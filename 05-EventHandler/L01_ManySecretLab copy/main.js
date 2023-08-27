@@ -1,12 +1,15 @@
 const Mosquito = () => {
-  const [position, setPosition] = React.useState({ x: 0, y: 0 });
+  const [position1, setPosition1] = React.useState({ x1: 0, y1: 0 });
+  const [position2, setPosition2] = React.useState({ x2: 0, y2: 0 });
 
   React.useEffect(() => {
     const updatePosition = () => {
-      const newX = Math.random() * (window.innerWidth - 50);
-      const newY = Math.random() * (window.innerHeight - 50);
-      setPosition({ x: newX, y: newY });
-
+      const newX1 = Math.random() * (window.innerWidth - 50);
+      const newY1 = Math.random() * (window.innerHeight - 50);
+      setPosition1({ x1: newX1, y1: newY1 });
+      const newX2 = Math.random() * (window.innerWidth - 50);
+      const newY2 = Math.random() * (window.innerHeight - 50);
+      setPosition2({ x2: newX2, y2: newY2 });
       setIsDead(false);
     };
     const interval = setInterval(updatePosition, 500);
@@ -25,12 +28,13 @@ const Mosquito = () => {
         src="./mos.jpeg"
         style={{
           position: "absolute",
-          left: position.x + "px",
-          top: position.y + "px",
+          left: position1.x1 + "px",
+          top: position1.y1 + "px",
           width: "80px",
           height: "80px",
           cursor: "pointer",
           borderRadius: "50%",
+          transition: "all 1s",
         }}
       />
       <img

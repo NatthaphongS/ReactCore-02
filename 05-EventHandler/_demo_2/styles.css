@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-size: 4rem;
+    font-size: 1.6rem;
 }
 
 h1 {
@@ -19,6 +19,11 @@ h1 {
     margin: 3rem 0;
     /* color: red; */
 }
-.hide{
-    display: none;
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
 }

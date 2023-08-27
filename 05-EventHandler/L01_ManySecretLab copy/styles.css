@@ -5,8 +5,7 @@
 }
 
 html {
-    font-size: 62.5%; 
-    /* // root 16px * 0.625 == 10px */
+    font-size: 62.5%; // root 16px * 0.625 == 10px
 }
 
 body {
@@ -18,7 +17,4 @@ h1 {
     text-align: center;
     margin: 3rem 0;
     /* color: red; */
-}
-.hide{
-    display: none;
 }
