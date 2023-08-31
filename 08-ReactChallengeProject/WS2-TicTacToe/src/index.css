@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #90D9BB;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+.gameBoard{
+    background-color: #0e5a44b4;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+    color: #cc923a;
+    padding: 20px;
+    cursor: default;
+    font-size: 1.4rem;
+}
+p{
+    color: black;
+    font-size: 1.6rem;
+}
+.board{
+    display: grid;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-columns: 75px 75px 75px;
+    gap: 5px;
+}
+.slot{
+    background-color: #D7C2A3;
+    color: #cc923a;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+.reset{
+    background-color: #cc923a;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid #D7C2A3;
+    text-decoration: none;
+    color: black;
+}
+.winner{
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+}
