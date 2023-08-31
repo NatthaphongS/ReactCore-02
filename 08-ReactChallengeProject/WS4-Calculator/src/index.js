@@ -103,7 +103,8 @@ function Calculator() {
     if (board.length == 2) {
       board.push(result);
       setResult(`${board[0](board[1], board[2])}`);
-      setBoard([]);
+      board.splice(0, board.length);
+      setBoard(board);
     }
   }
 
