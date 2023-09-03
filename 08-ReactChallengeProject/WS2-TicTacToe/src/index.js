@@ -56,18 +56,18 @@ function App() {
     checkWin("O");
   }
 
-  //   function reset() {
-  //     board.splice(0, 9, "", "", "", "", "", "", "", "", "");
-  //     console.log(board);
-  //     setBoard(board);
-  //     console.log("finish");
-  //   }
+  function reset() {
+    setBoard(["", "", "", "", "", "", "", "", ""]);
+    setIsEnd(false);
+    setRound(1);
+    setWinner("");
+  }
 
   return (
     <main>
       <div className="gameBoard">
         <h1>Tic! Tac! Toe!</h1>
-        <p>Player : {round % 2 == 0 ? "X" : "O"}</p>
+        {isEnd ? "" : <p>Player : {round % 2 == 0 ? "X" : "O"}</p>}
         <div className="board">
           <div className="slot" onClick={() => setAns(0)}>
             {board[0]}
@@ -97,17 +97,14 @@ function App() {
             {board[8]}
           </div>
         </div>
-        <a className="reset" href="./index.html">
+        <button type="button" className="reset" onClick={reset}>
           Reset
-        </a>
+        </button>
         {isEnd && (
           <div className="winner">
             <h2>{winner}</h2>
           </div>
         )}
-        {/* <button className="reset" onClick={reset}>
-          Reset
-        </button> */}
       </div>
     </main>
   );
