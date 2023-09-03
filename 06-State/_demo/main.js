@@ -2,7 +2,7 @@
 // #1. FC : App
 function App() {
   // #2. Handle Logic#1.
-  // console.log(React);
+  console.log(React);
   // state:number=0
   // React.useState(0);
   // .useState(initialstate) is a function that keep in React-object it will return array (with 2element in array)

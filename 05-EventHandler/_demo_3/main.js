@@ -24,11 +24,12 @@ function App() {
       <input type="text" onChange={(e) => handleEvent1(e, 5, 6, 7)} />
       {/* event=e,a=5,b=6,c=7 */}
       <input type="text" onChange={(e) => handleEvent2(5, 6, 7)} />
+      {/* a=5,b=6,c=7 */}
+
       {/* <input type="text" onChange={Logic(5)} /> */}
       {/* Can' do this */}
       {/* must have another function for wrapper */}
       <input type="text" onChange={Wrapper} />
-      {/* a=5,b=6,c=7 */}
     </div>
   );
 }
