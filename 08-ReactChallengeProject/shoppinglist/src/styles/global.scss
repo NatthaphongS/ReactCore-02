@@ -17,12 +17,23 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Caveat', cursive;
 }
 
 li {
   list-style: none;
+}
+
+h1{
+  font-size: $text-5xl;
+  font-weight: 700;
+}
+h3{
+  font-size: $text-2xl;
+  font-weight: 500;
+}
+p,li,button,input{
+  font-size: $text-xl;
+  font-weight: 400;
+  font-family: 'Caveat', cursive;
 }

@@ -1,10 +1,16 @@
 import "./App.scss";
+import Form from "../component/Form";
+import List from "../component/List";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Project</h1>
-    </div>
+    <main>
+      <div className="shoppingList">
+        <h1>Item to buy</h1>
+        <Form/>
+        <List/>
+      </div>
+    </main>
   );
 }
 

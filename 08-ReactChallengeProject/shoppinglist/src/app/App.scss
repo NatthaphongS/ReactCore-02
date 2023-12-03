@@ -1,0 +1,27 @@
+@import '../styles/colors.scss';
+
+main{
+    background-color: $primary-300;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: $primary-400;
+}
+.shoppingList{
+    background-color: $secondary-300;
+    width: 80%;
+    height: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid $primary-600;
+    overflow: auto;
+}
+

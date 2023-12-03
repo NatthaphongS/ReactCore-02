@@ -1,0 +1,15 @@
+@import '../styles/colors.scss';
+
+.list{
+    padding-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.8rem;
+    &__item{
+        border: 1px solid $secondary-600;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
