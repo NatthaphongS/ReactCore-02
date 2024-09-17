@@ -1,0 +1,39 @@
+@import './colors.scss';
+@import './typography.scss';
+@import './variable.scss';
+
+// GLOBAL RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px; /*equal font-size : 10px*/
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+
+li {
+  list-style: none;
+}
+
+h1{
+  font-size: $text-5xl;
+  font-weight: 700;
+}
+h3{
+  font-size: $text-2xl;
+  font-weight: 500;
+}
+p,li,button,input{
+  font-size: $text-xl;
+  font-weight: 400;
+  font-family: 'Caveat', cursive;
+}

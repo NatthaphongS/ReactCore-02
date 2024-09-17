@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+    /* color: red; */
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator{
+    background-color: lightslategray;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 8px;
+    overflow: none;
+    gap: 1px;
+}
+.window{
+    flex: 2;
+    background-color: #333a4d;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+.window >p{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: white;
+    font-size: 7rem;
+    cursor: default;
+    text-size-adjust: auto;
+}
+.console{
+    flex: 5;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1px;
+}
+.leftpanel{
+    flex:3;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1px;
+}
+.leftpanel_upper{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1px;
+    font-size: 3rem;
+}
+.leftpanel_upper>div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+    cursor: pointer;
+}
+.leftpanel_upper>div:hover{
+    background-color: #a0a0a0;
+}
+.leftpanel_lowwer{
+    flex: 4;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1px;
+}
+.leftpanel_lowwer>div>div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.leftpanel_lowwer>div>div:hover{
+    background-color: #d4d3d3;
+}
+.leftpanel_lowwer>div{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1px;
+}
+.rightpanel{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    border-collapse: collapse;
+    gap: 1px;
+    font-size: 3rem;
+}
+.rightpanel>div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fea170;
+    cursor: pointer;
+}
+.rightpanel>div:hover{
+    background-color: #ff8340;
+}
+.rightpanel>:last-child{
+    background-color: #f78d6c;
+}
+.rightpanel>:last-child:hover{
+    background-color: #f85f31;
+}
+.n0{
+    border-radius: 0 0 0 8px;
+}
+.equal{
+    border-radius: 0 0 8px 0;
+}

@@ -1,0 +1,31 @@
+@import '../styles/colors.scss';
+
+form{
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+form > input{
+    flex: 1;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    color: $primary-500;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 3px dashed $primary-500;
+    font-weight: bold;
+}
+form >input:focus{
+    outline: none;
+}
+form > button{
+    padding: 0 0.8rem 0 0.4rem ;
+    background-color: $secondary-400;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid $primary-400;
+    color: $primary-500;
+    font-weight: bold;
+}
+form > button:hover{
+    background-color: $secondary-500;
+}

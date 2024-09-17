@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    /* // root 16px * 0.625 == 10px */
+}
+
+body {
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    z-index: -5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    padding-bottom: 20px;
+    text-align: center;
+    /* color: red; */
+}
+.go_left{
+    width: 60px;
+    font-size: 4rem;
+    aspect-ratio: 1;
+    color: rgb(83, 83, 83);
+    background-color: rgba(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 10px;
+    padding-left: 5px;
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    transform: translate(-50%,-50%)  rotate(180deg);
+    cursor: pointer;
+    z-index: 15;
+}
+.go_right{
+    width: 60px;
+    font-size: 4rem;
+    aspect-ratio: 1;
+    color: rgb(83, 83, 83);
+    background-color: rgba(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 10px;
+    padding-left: 5px;
+    position: absolute;
+    left: 95%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    z-index: 15;
+}
+.container{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+}
+
+.pic{
+    background-color: darkgrey;
+    position: absolute;
+    width: 500px;
+    aspect-ratio: 16/9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    display: none;
+}
+.pic > img{
+    width: 100%;
+}
+.left{
+    top: 35%;
+    left: 20%;
+    z-index: -1;
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+}
+.right{
+    top: 35%;
+    left: 80%;
+    z-index: -1;
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+}
+.center{
+    width: 650px;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+    display: flex;
+}
